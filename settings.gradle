@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':qmui'
 rootProject.name='AndroidX'
