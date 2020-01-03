@@ -1,0 +1,54 @@
+def butterKnifeVersion = "10.2.1"
+def autoDisposeVersion = "1.4.0"
+def glideVersion = "4.9.0"
+def retrofitVersion = "2.3.0"
+def chuckVersion = "1.1.0"
+
+project.ext {
+
+    android = [
+//            compileSdkVersion: 29,
+//            minSdkVersion    : 16,
+//            targetSdkVersion : 29,
+    ]
+    dependencies = [
+            "junit"                             : "junit:junit:4.12",
+            "ext-junit"                         : "androidx.test.ext:junit:1.1.1",
+            "espresso-core"                     : "androidx.test.espresso:espresso-core:3.2.0",
+            "butterknife"                       : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            "butterknife-compiler"              : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            "appcompat"                         : "androidx.appcompat:appcompat:1.1.0",
+            "legacy-support-v4"                 : "androidx.legacy:legacy-support-v4:1.0.0",
+            "material"                          : "com.google.android.material:material:1.0.0",
+            "recyclerview"                      : "androidx.recyclerview:recyclerview:1.1.0",
+            "constraintlayout"                  : "androidx.constraintlayout:constraintlayout:1.1.3",
+            "autodispose"                       : "com.uber.autodispose:autodispose:${autoDisposeVersion}",
+            "autodispose-android"               : "com.uber.autodispose:autodispose-android:${autoDisposeVersion}",
+            "autodispose-android-archcomponents": "com.uber.autodispose:autodispose-android-archcomponents:${autoDisposeVersion}",
+            "leakcanary-android"                : "com.squareup.leakcanary:leakcanary-android:2.0",
+            "fastjson"                          : "com.alibaba:fastjson:1.2.62",
+            "crashreport-bugly"                 : "com.tencent.bugly:crashreport:3.1.0",
+            "glide"                             : "com.github.bumptech.glide:glide:${glideVersion}",
+            "glide-compiler"                    : "com.github.bumptech.glide:compiler:${glideVersion}",
+            "rxpermissions"                     : "com.github.tbruyelle:rxpermissions:0.10.2",
+            "rxjava"                            : "io.reactivex.rxjava2:rxjava:2.2.16",
+            "rxandroid"                         : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            "retrofit"                          : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            "retrofit-converter-gson"           : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            "retrofit-adapter-rxjava2"          : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            "chuck-debug"                       : "com.readystatesoftware.chuck:library:${chuckVersion}",
+            "chuck-release"                     : "com.readystatesoftware.chuck:library-no-op:${chuckVersion}",
+            "multidex"                          : "com.android.support:multidex:1.0.3",
+            "org.eclipse.paho.android.service"  : "org.eclipse.paho:org.eclipse.paho.android.service:1.1.1",
+            "org.eclipse.paho.client.mqttv3"    : "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0",
+            "recyclerview-adapter"              : "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.0-beta4",
+            "refreshlayout"                     : "cn.bingoogolapple:bga-refreshlayout:1.1.8@aar",
+            "arouter"                           : "com.alibaba:arouter-api:1.3.1",
+            "arouter-compiler"                  : "com.alibaba:arouter-compiler:1.1.4",
+            "banner"                            : "com.youth.banner:banner:1.4.10",
+            "zxingscanner"                      : "com.mylhyl:zxingscanner:2.1.6",
+            "autosize"                          : "me.jessyan:autosize:1.1.2",
+            "update-app"                        : "com.qianwen:update-app:3.5.2",
+            "okhttp-utils"                      : "com.qianwen:okhttp-utils:3.8.0",
+    ]
+}
