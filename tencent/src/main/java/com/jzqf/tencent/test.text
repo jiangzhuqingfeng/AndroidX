@@ -1,0 +1,2 @@
+创建keystore:
+keytool -genkey -alias lwh -keypass 123456 -keyalg RSA -keysize 2048 -validity 36500 -keystore D:\Develop\jzqf.keystore -storepass 123456 
